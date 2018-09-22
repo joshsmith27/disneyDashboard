@@ -1,0 +1,14 @@
+.Details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  min-width: 360px;
+  margin: auto;
+  flex-wrap: wrap; }
+
+.rides-Container {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between; }

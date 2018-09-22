@@ -16,7 +16,7 @@ class Details extends Component {
     let rides = [];
     if(this.props.details.allRides){
       rides = this.props.details.allRides.map((ride)=>{
-        return <WaitTimeCard key={ride.name}/>
+        return <WaitTimeCard key={ride.name} name={ride.name} waitTime={ride.waitTime}/>
       })
     }
     if(typeof this.props.details === "string"){
@@ -31,10 +31,14 @@ class Details extends Component {
       return (
         <div className="Details">
           <Header/>
-          <DisneyLogo name={this.props.match.params.name}/>
-          <AverageWait average={this.props.details.average}/>
-          <OpenClose open={this.props.details.open} close={this.props.details.close}/>
-          {rides}
+          <div className="Details-container">
+              <DisneyLogo name={this.props.match.params.name}/>
+              <AverageWait average={this.props.details.average}/>
+              <OpenClose open={this.props.details.open} close={this.props.details.close}/>
+              <div className="rides-Container">
+                {rides}
+              </div>
+          </div>
         </div>
       );
     }

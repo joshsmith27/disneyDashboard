@@ -1,3 +1,11 @@
-.AverageWait div {
-  font-size: 20px;
-  color: black; }
+.AverageWait {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #F2F2EA; }
+  .AverageWait div {
+    font-size: 20px; }

@@ -7,8 +7,7 @@ class AverageWait extends Component {
     return (
         <div className="AverageWait">
             <div>Average Wait Times</div>
-            <br/>
-            <div>Wait Time {this.props.average} Minutes</div>
+            <div>{this.props.average} Minutes</div>
         </div>
     );
   }

@@ -1,11 +1,24 @@
 .WaitTimeCard {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 5px;
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(0, 0, 0, 0.8);
+  width: 50%;
+  margin-top: 30px;
+  border-radius: 4px; }
   .WaitTimeCard .waitTimeCardName {
-    font-size: 30px;
-    color: #F2F2EA; }
+    font-size: 20px;
+    color: #F2F2EA;
+    padding-left: 10px;
+    text-align: left;
+    padding-top: 7px; }
   .WaitTimeCard .waitTimeCardAvg {
     border-left: 1px solid #C22532;
-    color: #F2F2EA; }
+    color: #F2F2EA;
+    padding-left: 7px; }
+
+@media (max-width: 600px) {
+  .WaitTimeCard {
+    width: 100%; } }

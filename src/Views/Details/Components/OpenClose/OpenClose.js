@@ -9,12 +9,12 @@ class OpenClose extends Component {
         <div>
             <h4>Opened Today At</h4>
             <br/>
-            {this.props.open}
+            <h4>{new Date(this.props.open).toLocaleTimeString()}</h4>
         </div>
         <div className="close">
             <h4>Closes Today At</h4>
             <br/>
-            {this.props.close}
+            <h4>{new Date(this.props.close).toLocaleTimeString()}</h4>
         </div>
       </div>
     );
