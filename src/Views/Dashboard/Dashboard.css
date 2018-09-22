@@ -1,0 +1,11 @@
+.all-parks-closed {
+  margin-top: 200px; }
+
+.dashboard-body {
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.parks-list {
+  margin-top: 40px; }

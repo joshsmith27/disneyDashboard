@@ -1,0 +1,28 @@
+.ParkCard {
+    display: flex;
+    justify-content: center
+}
+.ParkCardLink {
+    background: rgba(0, 0 ,0, .8);
+    display: -ms-flexbox;
+    display: flex;
+    width: 360px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: solid 1px black;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #F2F2EA;
+}
+.average-card {
+    border-left: solid 1px #C22532;
+    padding: 15px;
+    color: #F2F2EA;
+}
+.park-name {
+    font-size: 30px;
+    margin-top: 17px;
+    padding-left: 18px;
+}

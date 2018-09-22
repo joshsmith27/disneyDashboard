@@ -1,0 +1,35 @@
+.bestParkTitle {
+  font-size: 65px;
+  margin: 0px; }
+
+.BestPark {
+  background: rgba(0, 0, 0, 0.8);
+  width: 360px;
+  padding: 8px;
+  border-radius: 4px;
+  color: #F2F2EA;
+  margin-top: 40px; }
+
+.see-more {
+  text-decoration: none;
+  color: #F2F2EA;
+  font-size: 20px; }
+
+.info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #F2F2EA;
+  padding: 0px 14px;
+  margin-top: 10px;
+  margin-bottom: 23px;
+  border-radius: 4px;
+  border-bottom: solid 1px #C22532;
+  border-top: solid 1px #C22532; }
+  .info p {
+    text-align: left;
+    min-width: 50px; }
+
+p.best-Park-Name {
+  font-size: 20px; }

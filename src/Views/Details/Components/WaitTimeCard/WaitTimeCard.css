@@ -1,0 +1,11 @@
+.WaitTimeCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.8); }
+  .WaitTimeCard .waitTimeCardName {
+    font-size: 30px;
+    color: #F2F2EA; }
+  .WaitTimeCard .waitTimeCardAvg {
+    border-left: 1px solid #C22532;
+    color: #F2F2EA; }
