@@ -15,10 +15,11 @@ class Details extends Component {
   render() {
     let rides = [];
     if(this.props.details.allRides){
-      rides = this.props.details.allRides.map((ride)=>{
+      rides = this.props.details.allRides.filter(x=>x.waitTime > 0).map((ride)=>{
         return <WaitTimeCard key={ride.name} name={ride.name} waitTime={ride.waitTime}/>
       })
     }
+    rides.push(<WaitTimeCard key={'unkown'} name={`All Other Rides`} waitTime={0}/>)
     if(typeof this.props.details === "string"){
       return (
         <div className="Details">
