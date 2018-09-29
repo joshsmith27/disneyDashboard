@@ -5,7 +5,9 @@
   display: -ms-flexbox;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  max-width: 850px;
+  margin: auto; }
 
 .parks-list {
   margin-top: 40px; }

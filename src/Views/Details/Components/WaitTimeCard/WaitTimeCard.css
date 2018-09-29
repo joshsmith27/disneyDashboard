@@ -13,7 +13,8 @@
     color: #F2F2EA;
     padding-left: 10px;
     text-align: left;
-    padding-top: 7px; }
+    padding-top: 7px;
+    width: 80%; }
   .WaitTimeCard .waitTimeCardAvg {
     border-left: 1px solid #C22532;
     color: #F2F2EA;
