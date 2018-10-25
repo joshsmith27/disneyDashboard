@@ -9,18 +9,15 @@ import OpenClose from './Components/OpenClose/OpenClose';
 import AverageWait from './Components/AverageWait/AverageWait';
 
 class Details extends Component {
-  componentDidMount(){
-    this.props.getWaitTimes(this.props.match.params.name)
-  }
   render() {
     let rides = [];
-    if(this.props.details.allRides){
-      rides = this.props.details.allRides.filter(x=>x.waitTime > 0).map((ride)=>{
+    if(this.props[this.props.match.params.name].allRides){
+      rides = this.props[this.props.match.params.name].allRides.filter(x=>x.waitTime > 0).map((ride)=>{
         return <WaitTimeCard key={ride.name} name={ride.name} waitTime={ride.waitTime}/>
       })
     }
     rides.push(<WaitTimeCard key={'unkown'} name={`All Other Rides`} waitTime={0}/>)
-    if(typeof this.props.details === "string"){
+    if(typeof this.props[this.props.match.params.name] === "string"){
       return (
         <div className="Details">
           <Header/>
