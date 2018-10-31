@@ -7,8 +7,18 @@ import {DisneyLogo} from '../../Shared/DisneyLogo/DisneyLogo';
 import WaitTimeCard from './Components/WaitTimeCard/WaitTimeCard';
 import OpenClose from './Components/OpenClose/OpenClose';
 import AverageWait from './Components/AverageWait/AverageWait';
+import axios from 'axios';
 
 class Details extends Component {
+  componentDidMount(){
+    debugger
+    axios.get(`http://localhost:8070/api/wait_times/${this.props.match.params.name}`)
+      .then((response)=>{
+        debugger
+        this.props.setWaitTimes(this.props.match.params.name, response.data)	
+      })
+      
+  }
   render() {
     let rides = [];
     if(this.props[this.props.match.params.name].allRides){

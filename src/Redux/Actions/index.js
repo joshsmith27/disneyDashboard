@@ -20,6 +20,33 @@ export const getWaitTimes = (name) => {
     }
 }
 
+export const setWaitTimes = (name, payload) => {
+    switch(name){
+        case 'disneyEpcot':
+            return{
+                type: UPDATE_EPCOT,
+                payload,
+            }
+        case 'disneyMagicKingdom':
+            return{
+                type: UPDATE_MAGIC_KINGDOM,
+                payload,
+            }
+        case 'disneyAnimalKingdom':
+            return{
+                type: UPDATE_ANIMAL_KINGDOM,
+                payload,
+            }
+        case 'disneyHollywoodStudios':
+            return{
+                type: UPDATE_HOLLYWOOD_STUDIOS,
+                payload,
+            }
+        default:
+        break;
+    }
+}
+
 export const updateParks = (payload) => {
     return{
         type:UPDATE_PARKS,

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import disneyMagicKingdomLogo from '../../assests/Magic_Kingdom_Logo.png'
 import disneyAnimalKingdomLogo from '../../assests/Animal_Kingdom_Logo.png'
 import disneyEpcotLogo from '../../assests/Epcot_Logo.png'
@@ -21,6 +21,8 @@ export const DisneyLogo = (props) => {
       case 'disneyMagicKingdom':
         img = disneyMagicKingdomLogo
         break; 
+      default:
+        break;
     }
     return (
         <div className="park-logo" style={{backgroundImage:`url(${img})`}}></div>

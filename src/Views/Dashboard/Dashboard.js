@@ -6,22 +6,14 @@ import BestPark from './Components/BestPark/BestPark'
 import ParkCard from './Components/ParkCard/ParkCard'
 import Header from '../../Shared/Header/Header'
 import {
-  GET_WAIT_TIMES, 
   UPDATE_PARKS, 
   UPDATE_BEST_PARK, 
-  UPDATE_MAGIC_KINGDOM, 
-  UPDATE_EPCOT,
-  UPDATE_HOLLYWOOD_STUDIOS,
-  UPDATE_ANIMAL_KINGDOM,
 } from '../../Redux/constraints';
 const BaseUrl = 'http://localhost:8070/api/'
 
 
 
 class Dashboard extends Component {
-  constructor(props){
-    super(props)
-  } 
   componentDidMount(){
     if(!this.props.BestPark.parkInfo && typeof this.props.BestPark !== "string"){
       axios.get(`${BaseUrl}best_park`)
