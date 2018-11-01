@@ -1,6 +1,6 @@
 import openSocket from 'socket.io-client';
 import * as Actions from './Redux/Actions';
-const socket = openSocket('https://disneydashboardapi.herokuapp.com/park');
+const socket = openSocket(`${process.env.REACT_APP_BASE_URL}/park`);
 
 
 export const eventDispatcher = (dispatch) => {

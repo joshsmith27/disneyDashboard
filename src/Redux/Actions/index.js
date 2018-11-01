@@ -10,7 +10,7 @@ import {
 
 import axios from 'axios';
 
-const BaseUrl = 'https://disneydashboardapi.herokuapp.com/api/'
+const BaseUrl = `${process.env.REACT_APP_BASE_URL}/api/`
 
 export const getWaitTimes = (name) => {
     const request = axios.get(`${BaseUrl}wait_times/${name}`)

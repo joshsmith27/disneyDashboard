@@ -59,7 +59,7 @@ const disneyEpcot = (state={}, action) => {
     }
 }
 
-const disneyAnimalKingdom = (state={}, action) => {
+const disneyHollywoodStudios = (state={}, action) => {
     switch(action.type){
         case `${UPDATE_HOLLYWOOD_STUDIOS}`:
             return action.payload;
@@ -68,7 +68,8 @@ const disneyAnimalKingdom = (state={}, action) => {
     }
 }
 
-const disneyHollywoodStudios = (state={}, action) => {
+const disneyAnimalKingdom  = (state={}, action) => {
+
     switch(action.type){
         case `${UPDATE_ANIMAL_KINGDOM}`:
             return action.payload;

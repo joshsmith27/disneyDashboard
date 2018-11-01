@@ -8,12 +8,13 @@ import WaitTimeCard from './Components/WaitTimeCard/WaitTimeCard';
 import OpenClose from './Components/OpenClose/OpenClose';
 import AverageWait from './Components/AverageWait/AverageWait';
 import axios from 'axios';
-const BaseUrl = 'https://disneydashboardapi.herokuapp.com/api/'
+const BaseUrl = `${process.env.REACT_APP_BASE_URL}/api/`
 
 class Details extends Component {
   componentDidMount(){
     axios.get(`${BaseUrl}wait_times/${this.props.match.params.name}`)
       .then((response)=>{
+        
         this.props.setWaitTimes(this.props.match.params.name, response.data)	
       })
       
@@ -40,8 +41,8 @@ class Details extends Component {
           <Header/>
           <div className="Details-container">
               <DisneyLogo name={this.props.match.params.name}/>
-              <AverageWait average={this.props.details.average}/>
-              <OpenClose open={this.props.details.open} close={this.props.details.close}/>
+              <AverageWait average={this.props[this.props.match.params.name].average}/>
+              <OpenClose open={this.props[this.props.match.params.name].open} close={this.props[this.props.match.params.name].close}/>
               <div className="rides-Container">
                 {rides}
               </div>

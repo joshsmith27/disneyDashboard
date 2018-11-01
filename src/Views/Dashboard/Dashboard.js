@@ -9,7 +9,7 @@ import {
   UPDATE_PARKS, 
   UPDATE_BEST_PARK, 
 } from '../../Redux/constraints';
-const BaseUrl = 'https://disneydashboardapi.herokuapp.com/api/'
+const BaseUrl = `${process.env.REACT_APP_BASE_URL}/api/`
 
 
 
