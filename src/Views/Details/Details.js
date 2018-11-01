@@ -8,7 +8,7 @@ import WaitTimeCard from './Components/WaitTimeCard/WaitTimeCard';
 import OpenClose from './Components/OpenClose/OpenClose';
 import AverageWait from './Components/AverageWait/AverageWait';
 import axios from 'axios';
-const BaseUrl = `${process.env.REACT_APP_BASE_URL}/api/`
+const BaseUrl = `${process.env.REACT_APP_BASE_URL}api/`
 
 class Details extends Component {
   componentDidMount(){
