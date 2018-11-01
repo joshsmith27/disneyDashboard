@@ -12,10 +12,8 @@ const BaseUrl = 'https://disneydashboardapi.herokuapp.com/api/'
 
 class Details extends Component {
   componentDidMount(){
-    debugger
     axios.get(`${BaseUrl}wait_times/${this.props.match.params.name}`)
       .then((response)=>{
-        debugger
         this.props.setWaitTimes(this.props.match.params.name, response.data)	
       })
       
