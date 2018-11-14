@@ -1,6 +1,6 @@
 import openSocket from 'socket.io-client';
 import * as Actions from './Redux/Actions';
-const socket = openSocket(`${process.env.REACT_APP_BASE_URL}/park`);
+const socket = openSocket(`http://localhost:8070/park`);
 
 
 export const eventDispatcher = (dispatch) => {
