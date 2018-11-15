@@ -8,7 +8,7 @@ import WaitTimeCard from './Components/WaitTimeCard/WaitTimeCard';
 import OpenClose from './Components/OpenClose/OpenClose';
 import AverageWait from './Components/AverageWait/AverageWait';
 import axios from 'axios';
-const BaseUrl = `http://localhost:8070/api/`
+const BaseUrl = `http://192.168.86.33:8070/api/`
 
 class Details extends Component {
   componentDidMount(){

@@ -9,7 +9,7 @@ import {
   UPDATE_PARKS, 
   UPDATE_BEST_PARK, 
 } from '../../Redux/constraints';
-const BaseUrl = `http://localhost:8070/api/`
+const BaseUrl = `http://192.168.86.33:8070/api/`
 
 
 
